@@ -1,0 +1,21 @@
+<APIProxy revision="2" name="SOAP-Apigee-DEMO-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1626250609065</CreatedAt>
+    <LastModifiedAt>1626250609065</LastModifiedAt>
+    <BasePaths>/v1/soap</BasePaths>
+    <Policies>
+        <Policy>SOAP-MV</Policy>
+        <Policy>VAK</Policy>
+        <Policy>DecodeBaseAuthHeaders</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>wsdl://soap.wsdl</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

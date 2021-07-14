@@ -1,0 +1,36 @@
+<APIProxy revision="6" name="SOAP-Apigee-DEMO-2">
+    <DisplayName>HelloWorldService</DisplayName>
+    <Description>HelloWorldService</Description>
+    <CreatedAt>1626252958587</CreatedAt>
+    <LastModifiedAt>1626252958587</LastModifiedAt>
+    <BasePaths>/v2/soap</BasePaths>
+    <Policies>
+        <Policy>return-open-api</Policy>
+        <Policy>unknown-resource-xml</Policy>
+        <Policy>set-response-soap-body</Policy>
+        <Policy>set-target-url</Policy>
+        <Policy>xml-to-json</Policy>
+        <Policy>get-response-soap-body-xml</Policy>
+        <Policy>remove-namespaces</Policy>
+        <Policy>remove-empty-nodes</Policy>
+        <Policy>extract-format</Policy>
+        <Policy>return-generic-error</Policy>
+        <Policy>say_hello-build-soap</Policy>
+        <Policy>return-generic-error-accept</Policy>
+        <Policy>unknown-resource</Policy>
+        <Policy>say_hello-extract-query-param</Policy>
+        <Policy>set-response-soap-body-accept</Policy>
+        <Policy>get-response-soap-body</Policy>
+        <Policy>VAK</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>xsl://remove-empty-nodes.xslt</Resource>
+        <Resource>xsl://remove-namespaces.xslt</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

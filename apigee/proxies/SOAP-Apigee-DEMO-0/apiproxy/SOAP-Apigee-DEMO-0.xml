@@ -1,0 +1,13 @@
+<APIProxy revision="1" name="SOAP-Apigee-DEMO-0">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1626248621857</CreatedAt>
+    <LastModifiedAt>1626248653162</LastModifiedAt>
+    <BasePaths>/soap</BasePaths>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

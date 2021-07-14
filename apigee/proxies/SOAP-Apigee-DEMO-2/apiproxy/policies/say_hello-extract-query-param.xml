@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="true" enabled="true" name="say_hello-extract-query-param">
+    <DisplayName>say_hello Extract Query Param</DisplayName>
+    <Source>request</Source>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+<QueryParam name="name">
+<Pattern ignoreCase="true">{name}</Pattern>
+</QueryParam>
+<QueryParam name="times">
+<Pattern ignoreCase="true">{times}</Pattern>
+</QueryParam>
+</ExtractVariables>

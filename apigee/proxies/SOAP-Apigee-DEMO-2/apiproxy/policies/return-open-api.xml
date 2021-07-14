@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="return-open-api">
+    <DisplayName>Return Open API</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <StatusCode>200</StatusCode>
+            <Headers>
+                <Header name="Content-Type">application/json</Header>
+            </Headers>
+            <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "HelloWorldService",
+    "description": "An OAS document generated from WSDL",
+    "termsOfService": "",
+    "contact": {
+      "name": "API Team"
+    },
+    "license": {
+      "name": "Apache 2.0"
+    }
+  },
+  "host": "bap-emea-apigee-5-dev.lalevee.org",
+  "basePath": "/v2/soap",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/hello": {
+      "get": {
+        "operationId": "1",
+        "description": "Implements WSDL operation say_hello",
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/say_helloResult"
+            },
+            "description": "Successful response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Name of the person to return"
+          },
+          {
+            "type": "integer",
+            "in": "query",
+            "name": "times",
+            "description": "Number of times to be returned",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "x-apikey": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "say_helloResult": {
+      "type": "array",
+      "description": "",
+      "minItems": 1,
+      "uniqueItems": true,
+      "x-examples": {
+        "example-1": [
+          {}
+        ]
+      },
+      "items": {
+        "type": "object",
+        "properties": {
+          "": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "x-apikey": {
+      "name": "API Key",
+      "type": "apiKey",
+      "in": "header"
+    }
+  }
+}</Payload>
+        </Set>
+    </FaultResponse>
+</RaiseFault>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageValidation continueOnError="false" enabled="true" name="SOAP-MV">
+    <DisplayName>SOAP-MV</DisplayName>
+    <Properties/>
+    <Element namespace="spyne.examples.hello.soap">say_hello</Element>
+    <SOAPMessage version="1.1"/>
+    <Source>request</Source>
+    <ResourceURL>wsdl://soap.wsdl</ResourceURL>
+</MessageValidation>
