@@ -31,3 +31,5 @@ curl --request POST \
 ```
 7) Create a Developer Portal
 8) Add SOAP-API-Product with SOAP2REST.json specification
+9) Generate the Markdown documentation from the wsdl by using the script in `apigee/soap-documentation` 
+10) Create a page in your integrated developer portal and paste the Markdown
