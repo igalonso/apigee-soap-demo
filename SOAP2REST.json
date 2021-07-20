@@ -82,8 +82,8 @@
       }
     },
     "securityDefinitions": {
-      "x-apikey": {
-        "name": "API Key",
+      "API Key": {
+        "name": "x-apikey",
         "type": "apiKey",
         "in": "header"
       }
