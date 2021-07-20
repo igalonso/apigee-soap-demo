@@ -54,7 +54,7 @@
           ],
           "security": [
             {
-              "x-apikey": []
+              "API Key": []
             }
           ]
         }
